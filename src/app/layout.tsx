@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s — Mojtaba Yazdanpanah",
   },
   description:
-    "Product Designer and UX Researcher with 6+ years of experience. MSc Design Thinking. Bridging industry practice with academic inquiry. Open to funded PhD/EngD positions in Europe.",
+    "Senior Product Designer with 6+ years shipping enterprise, e-commerce, and platform products. Founder of Melina Design School. Open to new opportunities.",
   keywords: [
     "Product Designer",
     "UX Researcher",
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
     siteName: "Mojtaba Yazdanpanah",
     title: "Mojtaba Yazdanpanah — Product Designer & UX Researcher",
     description:
-      "Product Designer and UX Researcher with 6+ years of experience. MSc Design Thinking. Open to funded PhD/EngD positions in Europe.",
+      "Senior Product Designer with 6+ years shipping enterprise, e-commerce, and platform products. Founder of Melina Design School. Open to new opportunities.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Mojtaba Yazdanpanah — Product Designer & UX Researcher",
     description:
-      "Product Designer and UX Researcher with 6+ years of experience. MSc Design Thinking.",
+      "Senior Product Designer with 6+ years shipping enterprise, e-commerce, and platform products.",
   },
   robots: {
     index: true,

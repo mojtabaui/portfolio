@@ -31,7 +31,7 @@ export default function WorkPage() {
             Work
           </h1>
           <p className="text-white/40 text-base max-w-lg leading-relaxed">
-            5 industry projects spanning enterprise UX, luxury e-commerce, cultural institutions,
+            8 industry projects spanning enterprise UX, luxury e-commerce, cultural institutions,
             and B2B platforms — each grounded in research with measurable outcomes.
           </p>
         </FadeIn>

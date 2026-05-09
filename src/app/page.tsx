@@ -60,12 +60,12 @@ export default function Home() {
               Mojtaba Yazdanpanah
             </h2>
             <p className="text-[#555] leading-relaxed mb-5 text-[15px]" style={{ maxWidth: "38ch" }}>
-              Product Designer and UX Researcher with 6+ years shipping enterprise,
-              e-commerce, and platform products. MSc thesis examined Design Thinking's
-              effect on service quality via Structural Equation Modeling.
+              Product Designer with 6+ years shipping enterprise, e-commerce, and platform
+              products across international markets. Research-driven process from discovery
+              through to design systems and handoff.
             </p>
             <p className="text-[#555] leading-relaxed mb-10 text-[15px]" style={{ maxWidth: "38ch" }}>
-              Founder of Melina Design School — 6,000+ students mentored. Open to senior
+              Founder of Melina Design School — 6,000+ students mentored in UI/UX.
               Open to senior Product Designer roles and new opportunities.
             </p>
             <Link

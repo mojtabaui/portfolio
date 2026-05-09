@@ -16,7 +16,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-8">
           {[
-            { label: "Email", href: "mailto:mojtaba.yazdanpanah@gmail.com" },
+            { label: "Email", href: "mailto:m.yazdanpanah.grad@gmail.com" },
             { label: "LinkedIn", href: "https://linkedin.com/in/mojtabayazdanpanah" },
             { label: "School", href: "https://mojtabaui.ir" },
           ].map(({ label, href }) => (
@@ -32,7 +32,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <p className="text-white/20 text-xs">© 2025</p>
+        <p className="text-white/20 text-xs">© 2026</p>
       </div>
     </footer>
   );
