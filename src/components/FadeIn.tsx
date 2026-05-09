@@ -18,7 +18,7 @@ export default function FadeIn({ children, className, delay = 0 }: Props) {
       ref={ref}
       initial={{ opacity: 0, y: 24 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
-      transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay }}
+      transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] as [number, number, number, number], delay }}
       className={className}
     >
       {children}
