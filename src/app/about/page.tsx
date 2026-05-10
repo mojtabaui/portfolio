@@ -21,7 +21,7 @@ const experience = [
 
 const education = [
   { degree: "MSc — Software Engineering (Design Thinking & Innovation)", org: "Shahab Danesh University, Qom", period: "2020 — 2023", desc: "Thesis: Investigating the Effect of Design Thinking on Service Quality via Structural Equation Modeling (SmartPLS 3)." },
-  { degree: "BSc — Computer Engineering", org: "University of Tehran (Farabi Campus)", period: "2011 — 2015", desc: "Foundation in software engineering, algorithms, and programming." },
+  { degree: "BSc — Computer Engineering", org: "University of Tehran (Farabi Campus)", period: "2016 — 2019", desc: "Foundation in software engineering, algorithms, and programming." },
 ];
 
 export default function AboutPage() {

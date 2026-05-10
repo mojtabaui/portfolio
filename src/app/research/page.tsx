@@ -1,139 +1,196 @@
 import Link from "next/link";
 import { researchProjects } from "@/data/projects";
+import FadeIn from "@/components/FadeIn";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Research",
   description:
-    "UX research projects and academic work by Mojtaba Yazdanpanah — Mental Health UX, Healthcare AI, Marketplace UX. MSc thesis on Design Thinking and Service Quality.",
+    "UX research projects and academic work by Mojtaba Yazdanpanah — empirical mixed-methods research across healthcare, mental health, and marketplace design.",
 };
+
+const pad = "clamp(1.5rem, 7vw, 9rem)";
+const vPad = "clamp(4rem, 6vw, 7rem)";
 
 export default function ResearchPage() {
   return (
-    <div className="pt-14">
-      <section className="max-w-6xl mx-auto px-6 md:px-12 pt-24 pb-16">
-        <p className="text-xs tracking-widest uppercase text-[#6b6b6b] mb-6">Academic</p>
-        <h1 className="text-4xl md:text-6xl font-medium tracking-tight mb-6">Research</h1>
-        <p className="text-lg text-[#6b6b6b] max-w-xl leading-relaxed">
-          Empirical UX research and academic mentorship — applying mixed methods to real products
-          across healthcare, mental health, and marketplace design.
-        </p>
+    <div>
+
+      {/* Dark header */}
+      <section
+        className="grain bg-[#0d0d0d] flex flex-col justify-end"
+        style={{
+          minHeight: "55vh",
+          paddingLeft: pad,
+          paddingRight: pad,
+          paddingTop: "clamp(5rem, 10vw, 12rem)",
+          paddingBottom: vPad,
+        }}
+      >
+        <FadeIn>
+          <p className="text-xs uppercase tracking-widest text-white/30 mb-5">Academic</p>
+          <h1
+            className="font-medium text-white tracking-tight leading-none mb-6"
+            style={{ fontSize: "clamp(3rem, 7vw, 8rem)" }}
+          >
+            Research
+          </h1>
+          <p className="text-white/40 text-base max-w-lg leading-relaxed">
+            Empirical UX research and mentorship — mixed methods applied to real products
+            across healthcare, mental health, and marketplace design.
+          </p>
+        </FadeIn>
       </section>
 
       {/* MSc Thesis */}
-      <section className="max-w-6xl mx-auto px-6 md:px-12 pb-16">
-        <div className="border border-[#e5e5e5] p-8 md:p-12">
-          <p className="text-xs uppercase tracking-widest text-[#6b6b6b] mb-4">MSc Thesis · 2023</p>
-          <h2 className="text-2xl md:text-3xl font-medium tracking-tight mb-4 max-w-2xl">
-            The Effect of Design Thinking on Service Quality
-          </h2>
-          <p className="text-sm text-[#6b6b6b] leading-relaxed max-w-xl mb-6">
-            Empirical research using Structural Equation Modeling (SmartPLS 3). Examined how
-            Design Thinking methodology improves service delivery in educational contexts.
-            Shahab Danesh University, Qom.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            {["Design Thinking", "SEM", "SmartPLS 3", "Service Quality", "Education"].map((tag) => (
-              <span key={tag} className="text-xs px-3 py-1 border border-[#e5e5e5] text-[#6b6b6b]">
-                {tag}
-              </span>
-            ))}
+      <section className="bg-white border-b border-[#f0f0f0]">
+        <FadeIn>
+          <div
+            className="grid md:grid-cols-3 gap-10"
+            style={{ paddingLeft: pad, paddingRight: pad, paddingTop: vPad, paddingBottom: vPad }}
+          >
+            <div>
+              <p className="text-xs uppercase tracking-widest text-[#aaa] mb-3">MSc Thesis · 2023</p>
+              <p className="text-xs text-[#bbb] leading-relaxed">Shahab Danesh University, Qom</p>
+            </div>
+            <div className="md:col-span-2">
+              <h2
+                className="font-medium tracking-tight mb-5"
+                style={{ fontSize: "clamp(1.3rem, 2vw, 2rem)" }}
+              >
+                The Effect of Design Thinking on Service Quality
+              </h2>
+              <p className="text-sm text-[#555] leading-relaxed mb-6" style={{ lineHeight: 1.9, maxWidth: "52ch" }}>
+                Empirical research using Structural Equation Modeling (SmartPLS 3).
+                Examined how Design Thinking methodology improves service delivery in
+                educational contexts — bridging academic rigour with applied UX practice.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {["Design Thinking", "SEM", "SmartPLS 3", "Service Quality", "Education"].map((tag) => (
+                  <span key={tag} className="text-xs px-3 py-1 border border-[#e5e5e5] text-[#aaa]">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Research Projects */}
-      <section className="max-w-6xl mx-auto px-6 md:px-12 pb-24">
-        <p className="text-xs uppercase tracking-widest text-[#6b6b6b] mb-8">
-          Student Research Projects (Mentor & Co-Researcher)
-        </p>
-        <div className="space-y-0">
+      <section className="bg-white">
+        <div style={{ paddingLeft: pad, paddingRight: pad, paddingTop: vPad, paddingBottom: "1.5rem" }}>
+          <FadeIn>
+            <p className="text-xs uppercase tracking-widest text-[#aaa]">
+              Student Research Projects
+            </p>
+            <p className="text-xs text-[#bbb] mt-2">Mentor &amp; Co-Researcher</p>
+          </FadeIn>
+        </div>
+        <div className="border-t border-[#f0f0f0] mt-8">
           {researchProjects.map((project, i) => (
             <Link
               key={project.slug}
               href={`/work/${project.slug}`}
-              className="group flex flex-col md:flex-row md:items-start gap-4 py-10 border-t border-[#e5e5e5] hover:opacity-70 transition-opacity"
+              className="group block border-b border-[#f0f0f0] hover:bg-[#fafaf9] transition-colors"
             >
-              <span className="text-xs text-[#6b6b6b] font-mono w-8 pt-1 shrink-0">
-                R{i + 1}
-              </span>
-              <div className="flex-1">
-                <h2 className="text-2xl md:text-3xl font-medium tracking-tight mb-2">
-                  {project.title}
-                </h2>
-                <p className="text-sm text-[#6b6b6b] mb-4 max-w-2xl leading-relaxed">
-                  {project.overview}
-                </p>
-                {project.stats && (
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-4">
-                    {project.stats.map(({ label, value }) => (
-                      <div key={label}>
-                        <p className="text-xl font-medium tracking-tight">{value}</p>
-                        <p className="text-xs text-[#6b6b6b] mt-0.5">{label}</p>
-                      </div>
-                    ))}
+              <FadeIn delay={i * 0.05}>
+                <div
+                  className="grid md:grid-cols-3 gap-8 py-16"
+                  style={{ paddingLeft: pad, paddingRight: pad }}
+                >
+                  {/* Left: number + year + tags */}
+                  <div className="flex md:flex-col justify-between md:justify-start gap-4">
+                    <span className="text-xs font-mono text-[#ddd]">R{i + 1}</span>
+                    <span className="text-sm text-[#bbb]">{project.year}</span>
+                    <div className="hidden md:flex flex-wrap gap-2 mt-4">
+                      {project.tags.slice(0, 3).map((tag) => (
+                        <span key={tag} className="text-xs px-2.5 py-1 border border-[#eee] text-[#aaa]">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                )}
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs px-3 py-1 border border-[#e5e5e5] text-[#6b6b6b]"
+
+                  {/* Right: title + overview + stats */}
+                  <div className="md:col-span-2">
+                    <h2
+                      className="font-medium tracking-tight mb-4 group-hover:text-[#ff3d00] transition-colors"
+                      style={{ fontSize: "clamp(1.2rem, 1.8vw, 1.8rem)" }}
                     >
-                      {tag}
-                    </span>
-                  ))}
+                      {project.title}
+                    </h2>
+                    <p className="text-sm text-[#888] leading-relaxed mb-6" style={{ lineHeight: 1.9, maxWidth: "52ch" }}>
+                      {project.overview}
+                    </p>
+                    {project.stats && (
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6 border-t border-[#f5f5f5]">
+                        {project.stats.map(({ label, value }) => (
+                          <div key={label}>
+                            <p className="text-xl font-medium tracking-tight text-[#0d0d0d]">{value}</p>
+                            <p className="text-xs text-[#bbb] mt-1 uppercase tracking-widest">{label}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    <div className="flex items-center gap-2 mt-8 text-xs uppercase tracking-widest text-[#ccc] group-hover:text-[#ff3d00] transition-colors">
+                      <span>View Project</span>
+                      <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <span className="text-sm text-[#6b6b6b] shrink-0 md:pt-1">{project.year}</span>
+              </FadeIn>
             </Link>
           ))}
-          <div className="border-t border-[#e5e5e5]" />
         </div>
       </section>
 
       {/* Melina Design School */}
-      <section className="max-w-6xl mx-auto px-6 md:px-12 pb-24">
-        <div className="grid md:grid-cols-2 gap-px bg-[#e5e5e5] border border-[#e5e5e5]">
-          <div className="bg-[#fafaf8] px-8 py-10 md:px-12">
-            <p className="text-xs uppercase tracking-widest text-[#6b6b6b] mb-4">
-              Melina Design School · 2020 — Present
-            </p>
-            <h2 className="text-2xl font-medium tracking-tight mb-4">
-              Design Education as Applied Research
-            </h2>
-            <p className="text-sm leading-relaxed text-[#0f0f0f]/70 mb-6">
-              Five years of iteration on a hybrid design education platform combining recorded
-              modules with live mentoring — providing longitudinal data on what works in design
-              education for non-Western, resource-constrained contexts.
-            </p>
-            <a
-              href="https://mojtabaui.ir"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm link-underline"
-            >
-              mojtabaui.ir ↗
-            </a>
-          </div>
-          <div className="bg-[#fafaf8] px-8 py-10 md:px-12">
-            <p className="text-xs uppercase tracking-widest text-[#6b6b6b] mb-8">Impact</p>
-            <div className="grid grid-cols-2 gap-8">
+      <section
+        className="grain bg-[#0d0d0d]"
+        style={{ paddingLeft: pad, paddingRight: pad, paddingTop: vPad, paddingBottom: vPad }}
+      >
+        <FadeIn>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-12">
+            <div>
+              <p className="text-xs uppercase tracking-widest text-white/30 mb-8">Design Education</p>
+              <h2
+                className="font-medium text-white tracking-tight leading-snug mb-6"
+                style={{ fontSize: "clamp(1.8rem, 3vw, 3.5rem)", maxWidth: "22ch" }}
+              >
+                Melina Design School — 6,000+ students mentored
+              </h2>
+              <p className="text-white/50 text-sm leading-relaxed mb-8" style={{ maxWidth: "44ch", lineHeight: 1.9 }}>
+                Five years building a hybrid design education platform combining recorded
+                modules with live mentoring — a longitudinal study in what works in design
+                education for non-Western, resource-constrained contexts.
+              </p>
+              <a
+                href="https://mojtabaui.ir"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs uppercase tracking-widest text-white border-b border-white/20 pb-0.5 hover:text-[#ff3d00] hover:border-[#ff3d00] transition-colors"
+              >
+                mojtabaui.ir ↗
+              </a>
+            </div>
+            <div className="grid grid-cols-2 gap-10 shrink-0">
               {[
                 { value: "6,000+", label: "Students Mentored" },
-                { value: "5", label: "Years of Iteration" },
-                { value: "12+", label: "Student Projects Supervised" },
-                { value: "Hybrid", label: "Recorded + Live Model" },
+                { value: "5 yrs", label: "Years of Iteration" },
+                { value: "12+", label: "Projects Supervised" },
+                { value: "Hybrid", label: "Live + Recorded" },
               ].map(({ value, label }) => (
                 <div key={label}>
-                  <p className="text-2xl font-medium tracking-tight mb-1">{value}</p>
-                  <p className="text-xs text-[#6b6b6b]">{label}</p>
+                  <p className="text-2xl font-medium text-white tracking-tight">{value}</p>
+                  <p className="text-xs text-white/30 mt-1 uppercase tracking-widest">{label}</p>
                 </div>
               ))}
             </div>
           </div>
-        </div>
+        </FadeIn>
       </section>
+
     </div>
   );
 }
