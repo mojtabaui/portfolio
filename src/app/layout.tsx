@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s — Mojtaba Yazdanpanah",
   },
   description:
-    "Senior Product Designer with 6+ years shipping enterprise, e-commerce, and platform products. Founder of Melina Design School. Open to new opportunities.",
+    "Product Designer and UX Researcher with 6+ years at the intersection of design practice and empirical inquiry. MSc Design Thinking. Founder of Melina Design School.",
   keywords: [
     "Product Designer",
     "UX Researcher",
@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     "Service Design",
     "Design Education",
     "UI/UX",
+    "Structural Equation Modeling",
     "Mojtaba Yazdanpanah",
   ],
   authors: [{ name: "Mojtaba Yazdanpanah" }],

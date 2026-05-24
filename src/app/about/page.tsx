@@ -64,17 +64,17 @@ export default function AboutPage() {
               className="text-[#555] leading-relaxed mb-6"
               style={{ fontSize: "clamp(0.95rem, 1.1vw, 1.05rem)", maxWidth: "48ch", lineHeight: 1.8 }}
             >
-              Product Designer with 6+ years shipping enterprise, e-commerce, and platform
-              products across international markets. I work where research meets execution —
-              from structured discovery through to design systems and handoff.
+              Product Designer and UX Researcher with 6+ years at the intersection of
+              design practice and empirical inquiry — shipping enterprise, e-commerce,
+              and platform products while maintaining an active research agenda.
             </p>
             <p
               className="text-[#555] leading-relaxed"
               style={{ fontSize: "clamp(0.95rem, 1.1vw, 1.05rem)", maxWidth: "48ch", lineHeight: 1.8 }}
             >
-              Founder of Melina Design School (mojtabaui.ir) — 6,000+ students mentored in
-              UI/UX across the region. Currently open to senior Product Designer roles and
-              available to start immediately.
+              Founder of Melina Design School (mojtabaui.ir) — 6,000+ students mentored
+              in UI/UX. MSc in Design Thinking & Innovation. Open to new opportunities
+              in design and research.
             </p>
           </FadeIn>
         </div>
@@ -185,7 +185,7 @@ export default function AboutPage() {
                 className="font-medium text-white tracking-tight leading-snug"
                 style={{ fontSize: "clamp(1.8rem, 3.5vw, 4rem)", maxWidth: "22ch" }}
               >
-                Open to senior Product Designer roles — available now
+                Open to new opportunities in design and research
               </p>
             </div>
             <a

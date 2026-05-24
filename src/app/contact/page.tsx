@@ -81,7 +81,7 @@ export default function ContactPage() {
           className="font-medium text-white tracking-tight leading-snug"
           style={{ fontSize: "clamp(1.5rem, 2.5vw, 2.8rem)", maxWidth: "24ch" }}
         >
-          Open to senior Product Designer roles — available for new opportunities.
+          Open to new opportunities in design and research — available now.
         </p>
       </section>
     </div>

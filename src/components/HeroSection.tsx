@@ -77,11 +77,11 @@ export default function HeroSection() {
           className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pt-16"
         >
           <div className="flex flex-wrap gap-x-6 gap-y-1 text-white/40 text-xs tracking-widest uppercase" style={{ lineHeight: 1.8 }}>
-            <span>Senior Product Designer</span>
+            <span>Product Designer &amp; Researcher</span>
             <span>·</span>
             <span>6+ Years Experience</span>
             <span>·</span>
-            <span>Available Now</span>
+            <span>Open to Opportunities</span>
           </div>
           <a
             href="mailto:m.yazdanpanah.grad@gmail.com"
