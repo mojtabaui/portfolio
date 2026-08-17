@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
-  const statement = "Product design, for me, is the discipline of translating uncertainty into usable structure.";
+  const statement = "I study how people build judgement and wellbeing with the tools they use, and design the tools that help.";
   const words = statement.split(" ");
 
   const container = {
@@ -77,9 +77,9 @@ export default function HeroSection() {
           className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pt-16"
         >
           <div className="flex flex-wrap gap-x-6 gap-y-1 text-white/40 text-xs tracking-widest uppercase" style={{ lineHeight: 1.8 }}>
-            <span>Product Designer &amp; Researcher</span>
+            <span>HCI Researcher &amp; Designer</span>
             <span>·</span>
-            <span>6+ Years Experience</span>
+            <span>PhD Applicant · 2026</span>
             <span>·</span>
             <span>Open to Opportunities</span>
           </div>

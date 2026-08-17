@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Research",
   description:
-    "UX research projects and academic work by Mojtaba Yazdanpanah — empirical mixed-methods research across healthcare, mental health, and marketplace design.",
+    "Research by Mojtaba Yazdanpanah — doctoral direction on generative AI and design judgement, plus empirical mixed-methods work across health, mental health, and marketplace design.",
 };
 
 const pad = "clamp(1.5rem, 7vw, 9rem)";
@@ -36,10 +36,44 @@ export default function ResearchPage() {
             Research
           </h1>
           <p className="text-white/40 text-base max-w-lg leading-relaxed">
-            Empirical UX research and mentorship — mixed methods applied to real products
-            across healthcare, mental health, and marketplace design.
+            Empirical, mixed-methods research on how people build judgement, trust, and
+            wellbeing with technology — from health and mental-health apps to the
+            generative AI tools now reshaping design itself.
           </p>
         </FadeIn>
+      </section>
+
+      {/* Doctoral Direction */}
+      <section className="bg-white border-b border-[#f0f0f0]">
+        <div style={{ paddingLeft: pad, paddingRight: pad, paddingTop: vPad, paddingBottom: vPad }}>
+          <FadeIn>
+            <p className="text-xs uppercase tracking-widest text-[#aaa] mb-8">Doctoral Direction</p>
+            <p
+              className="font-medium tracking-tight mb-14 text-[#0d0d0d]"
+              style={{ fontSize: "clamp(1.4rem, 2.4vw, 2.4rem)", maxWidth: "24ch", lineHeight: 1.25 }}
+            >
+              Two questions I keep meeting in practice, and want to study properly.
+            </p>
+            <div className="grid md:grid-cols-2 gap-12 md:gap-20">
+              <div>
+                <p className="text-xs uppercase tracking-widest text-[#ff3d00] mb-4">01 — AI-native designers</p>
+                <p className="text-sm text-[#666]" style={{ lineHeight: 1.9, maxWidth: "44ch" }}>
+                  A generation is learning to design with generative AI from the very first
+                  project. How does design judgement form when the tool was always there,
+                  and how can we build tools that support that formation rather than replace it?
+                </p>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-widest text-[#ff3d00] mb-4">02 — Wellbeing &amp; human-data interaction</p>
+                <p className="text-sm text-[#666]" style={{ lineHeight: 1.9, maxWidth: "44ch" }}>
+                  Health and wellbeing tools succeed or fail on emotion, not features. I study
+                  how people make sense of their own data, and how design can support reflection
+                  and care instead of guilt and fatigue.
+                </p>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
       </section>
 
       {/* MSc Thesis */}

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Mojtaba Yazdanpanah — Senior Product Designer with 6+ years shipping enterprise, e-commerce, and platform products. Founder of Melina Design School. Open to new opportunities.",
+    "Mojtaba Yazdanpanah — HCI researcher and product designer preparing doctoral research on generative AI, design judgement, and wellbeing. Founder of Melina Design School.",
 };
 
 const pad = "clamp(1.5rem, 7vw, 9rem)";
@@ -64,17 +64,18 @@ export default function AboutPage() {
               className="text-[#555] leading-relaxed mb-6"
               style={{ fontSize: "clamp(0.95rem, 1.1vw, 1.05rem)", maxWidth: "48ch", lineHeight: 1.8 }}
             >
-              Product Designer and UX Researcher with 6+ years at the intersection of
-              design practice and empirical inquiry — shipping enterprise, e-commerce,
-              and platform products while maintaining an active research agenda.
+              HCI researcher and product designer with 6+ years at the intersection of
+              design practice and empirical inquiry. My research studies how people build
+              judgement, trust, and wellbeing with the tools they use, from health and
+              mental-health apps to the generative AI tools now reshaping how designers learn.
             </p>
             <p
               className="text-[#555] leading-relaxed"
               style={{ fontSize: "clamp(0.95rem, 1.1vw, 1.05rem)", maxWidth: "48ch", lineHeight: 1.8 }}
             >
-              Founder of Melina Design School (mojtabaui.ir) — 6,000+ students mentored
-              in UI/UX. MSc in Design Thinking & Innovation. Open to new opportunities
-              in design and research.
+              Founder of Melina Design School (mojtabaui.ir), with 6,000+ designers
+              mentored. MSc in Design Thinking & Innovation. Currently preparing doctoral
+              research in Human-Computer Interaction.
             </p>
           </FadeIn>
         </div>
@@ -164,7 +165,7 @@ export default function AboutPage() {
           <FadeIn>
             <p className="text-xs uppercase tracking-widest text-[#aaa] mb-8">Research Interests</p>
             <div className="flex flex-wrap gap-3">
-              {["Design Thinking", "Human-Computer Interaction (HCI)", "Service Design", "UX in EdTech", "Structural Equation Modeling", "Design Education", "Design Literacy"].map((i) => (
+              {["Human-Computer Interaction (HCI)", "Generative AI & Creativity", "Design Judgement & Metacognition", "Health & Wellbeing UX", "Personal Informatics", "Affective Computing", "Mixed-Methods Research", "Design Education"].map((i) => (
                 <span key={i} className="text-sm px-4 py-2 border border-[#e5e5e5] text-[#555]">{i}</span>
               ))}
             </div>

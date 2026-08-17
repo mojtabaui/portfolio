@@ -60,13 +60,14 @@ export default function Home() {
               Mojtaba Yazdanpanah
             </h2>
             <p className="text-[#555] leading-relaxed mb-5 text-[15px]" style={{ maxWidth: "38ch" }}>
-              Product Designer and UX Researcher with 6+ years shipping enterprise,
-              e-commerce, and platform products. Every project begins with a research
-              question — and ends with a measurable outcome.
+              HCI researcher and product designer working where design practice meets
+              empirical inquiry. My research studies how people build judgement, trust,
+              and wellbeing with the tools they use, from health and mental-health apps
+              to the generative AI tools now reshaping how designers learn.
             </p>
             <p className="text-[#555] leading-relaxed mb-10 text-[15px]" style={{ maxWidth: "38ch" }}>
-              Founder of Melina Design School — 6,000+ students mentored in UI/UX.
-              Open to new opportunities at the intersection of design and research.
+              Founder of Melina Design School, with 6,000+ designers mentored.
+              Currently preparing doctoral research in Human-Computer Interaction.
             </p>
             <Link
               href="/about"
@@ -154,7 +155,7 @@ export default function Home() {
         style={{ paddingLeft: pad, paddingRight: pad }}
       >
         <FadeIn>
-          <p className="text-xs uppercase tracking-widest text-white/25 mb-8">Open to Opportunities</p>
+          <p className="text-xs uppercase tracking-widest text-white/25 mb-8">PhD in Human-Computer Interaction</p>
           <p
             className="font-medium text-white tracking-tight leading-[1.1]"
             style={{ fontSize: "clamp(1.8rem,3.5vw,4rem)", maxWidth: "20ch" }}
